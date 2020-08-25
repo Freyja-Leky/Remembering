@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+>
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/Return"
+            android:background="@drawable/return_icon"
+/>
+    <TextView
+            android:text="Change Info"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/change_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Return"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/blackText"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/transparent"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            app:layout_constraintTop_toBottomOf="@id/Return"
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/Line2"
+    >
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/GrayLine"/>
+    </LinearLayout>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@id/Line2"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/info"
+            android:theme="@style/EditTextStyle"
+            android:maxLength="20"
+            android:singleLine="false"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名长度应控制在2-8个字符"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/info"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/info"
+            android:layout_marginStart="10dp"
+            android:id="@+id/RuleHint"/>
+
+
+    <Button
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/admit_bg"
+            app:layout_constraintTop_toBottomOf="@id/RuleHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/change"
+            android:text="完成"
+            android:layout_marginTop="10dp"/>
+
+</android.support.constraint.ConstraintLayout>

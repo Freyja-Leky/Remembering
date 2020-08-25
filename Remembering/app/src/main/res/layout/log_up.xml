@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent"
+                android:background="@drawable/signup_bg"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+            android:layout_width="375dp"
+            android:layout_height="150dp"
+            android:background="@drawable/log_up"
+            android:id="@+id/Topic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"/>
+
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/button_border"
+            android:hint="Email"
+            android:id="@+id/Email"
+            app:layout_constraintTop_toBottomOf="@id/Topic"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/button_border"
+            android:hint="Password"
+            android:id="@+id/Password"
+            app:layout_constraintTop_toBottomOf="@id/Email"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="登录"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_bg"
+            android:id="@+id/SignUp"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/Password"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="注册"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/register_button_bg"
+            android:id="@+id/Register"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/SignUp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
